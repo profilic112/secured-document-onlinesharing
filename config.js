@@ -1,13 +1,6 @@
 // email-redirect.js
 
 
-
-const urlParams = new URLSearchParams(window.location.search);
-const verified = urlParams.get("verified");
-if (verified !== "true") {
-    alert("Please complete verification first.");
-    window.location.href = "verify.html";
-
 document.addEventListener("DOMContentLoaded", function() {
     // Disable right-click
     document.addEventListener("contextmenu", function(e) {
